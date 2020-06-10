@@ -27,7 +27,7 @@ SQL;
 
 $keyword = $_GET['keyword'];
 
-// 条件付加
+// 条件付加   何も表示されない変なのわかるけど
 if ($keyword == $_GET['keyword']) {
   $sql_where = " where body like :keyword";
   $stmt = $dbh->prepare($sql_where);
